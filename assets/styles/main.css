@@ -2,15 +2,10 @@
     max-height: 45px;
 }
 
-.carousel-item{
-    width: 600px;
-    height: 400px;
+.carousel-custom {
+    max-width: 50%;
+    height: auto;
     border-radius: 20px;
-}
-
-.img-carousel{
-    width: 800px;
-    height: 400px;
 }
 
 .demo-content{
