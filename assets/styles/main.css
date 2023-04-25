@@ -1,0 +1,43 @@
+.logo{
+    max-height: 45px;
+}
+
+.carousel-item{
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.img-carousel{
+    width: 800px;
+    height: 400px;
+}
+
+.demo-content{
+    background-color: rgb(57, 57, 57);
+    color: antiquewhite;
+    padding: 5px;
+}
+
+.img-card {
+    width: 230px;
+    height: 150px;
+    padding: 5px;
+}
+
+.align-items-center{
+    align-items: center!important;
+}
+
+.justify-items-center{
+    align-items: center!important;
+}
+
+.normal-text{
+    font-size: medium;
+}
+
+.card-text{
+    font-size: small;
+    padding: 25px;
+}
