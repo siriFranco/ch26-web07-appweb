@@ -37,7 +37,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a 
@@ -60,26 +60,30 @@
                   <li><a class="dropdown-item disabled" href="#">Calculadora</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item disabled" href="#">Something else here</a>
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
     </nav>
     <div class="col-12 text-center">
-        <h1>¡Bienvenido amigo!</h1>
+      <h1 class="col-12" id="Greeting">¡Hola amigo!</h1>
     </div>
     <main>
-        <section>
-
+        <section class="text-center text-light m-5">
+          <button type="button" class="btn btn-dark btn-lg" onclick="changeGreeting()">¿Con quién tengo el gusto? </button>
         </section>
     </main>
-        
 
+    
+    <!-- Boostrap --> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>       
+    <!-- Custom JavaScript -->
+    <script src="../js/mi-nombre.js"></script>
     </body>
 </html>
