@@ -1,19 +1,32 @@
 
-
-function changeGreeting(){
-    // obtener nombre cliente
-    const visitorName = getNameOfVisitor ();
-    // obtener referencia label h1
-    const greetingReference = getReferenceOfIdGreeting();
-    greetingReference.innerHTML = "¡Hola " + visitorName +"!";
-    // cambiar saludo
+function sumar(){
+    var primerValor = parseInt(document.getElementById('valorIngresar').value);
+    var segundoValor = parseInt(document.getElementById('valorIngresarDos').value);
+    document.getElementById('total').innerHTML = primerValor + segundoValor;
 }
 
-function getNameOfVisitor(){
-    const visitorName = prompt("Escribe tu nombre");
-    return visitorName;
+function restar(){
+    var primerValor = parseInt(document.getElementById('valorIngresar').value);
+    var segundoValor = parseInt(document.getElementById('valorIngresarDos').value);
+    document.getElementById('total').innerHTML = primerValor - segundoValor;
 }
 
-function getReferenceOfIdGreeting(){
-    return document.getElementById("Greeting");
+function multiplicar(){
+    var primerValor = parseInt(document.getElementById('valorIngresar').value);
+    var segundoValor = parseInt(document.getElementById('valorIngresarDos').value);
+    document.getElementById('total').innerHTML = primerValor * segundoValor;
 }
+
+function dividir(){
+    var primerValor = parseInt(document.getElementById('valorIngresar').value);
+    var segundoValor = parseInt(document.getElementById('valorIngresarDos').value);
+    document.getElementById('total').innerHTML = primerValor / segundoValor;
+}
+
+const borrarDatos = () => {
+    document.getElementById("valorIngresar").value = "";
+    document.getElementById("valorIngresarDos").value = "";
+    document.getElementById("total").textContent = "TOTAL";
+  }
+  
+    
