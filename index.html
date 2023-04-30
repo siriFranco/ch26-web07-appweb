@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap demo</title>
+    <link rel="shortcut icon" href="./assets/img/cubo-degradado.png" class="favicon">
     <!-- Estilo de bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -29,7 +30,7 @@
     <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">
-          <i class="bi bi-box-fill"></i></a>
+          <img src="./assets/img/cubo-degradado.png" alt="" style="height: 30px;"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -44,7 +45,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a 
@@ -65,9 +66,11 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="./assets/html/proyecto.html">Dime tu nombre</a></li>
                 <li><a class="dropdown-item" href="./assets/html/calculator.html">Calculadora</a></li>
-                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="./assets/html/adivina.html">Adivina mi número</a></li>
+                <li><a class="dropdown-item" href="./assets/html/fecha.html">Fecha</a></li>
+                <li><hr class="dropdown-divider"/></li>
                 <li>
-                  <a class="dropdown-item disabled" href="#">Something else here</a>
+                  <a class="dropdown-item disabled" href="#">Próximamente</a>
                 </li>
               </ul>
             </li>
@@ -84,20 +87,20 @@
       </div>
     </nav>
 
-        <!--Cabecera-->
-        <div class="container mt-4">
-          <div class="row">
-            <div class="col">
-              <h1>Siria Franco</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <h3>Desarrollador web en proceso</h3>
-            </div>
-            <div class="col-12 col-md-6"><h3>Arquitecto</h3></div>
-          </div>
+    <!--Cabecera-->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col">
+          <h1>Siria Franco</h1>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h3>Desarrollador web en proceso</h3>
+        </div>
+        <div class="col-12 col-md-6"><h3>Arquitecto</h3></div>
+      </div>
+    </div>
 
       <!-- Carrosel -->
     <div class="container mt-4 text-center">
@@ -171,9 +174,12 @@
               <p class="normal-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem iure laudantium, perferendis aliquam totam adipisci ipsam omnis optio! Vitae nemo facere laborum tempora, suscipit consequuntur deleniti repellat hic? Voluptatem, praesentium.</p>
             </div>
             <!--Botones-->
-            <div class="row">
-              <div class="col">                
-                <button type="button" class="btn btn-dark"> <a href="https://www.linkedin.com/in/siria-franco-027552167/" target="_blank"> <i class="bi bi-linkedin"></i> Contáctame</a></button>
+            <div class="row justify-content-around">
+              <div class="col-6">                
+                <button type="button" class="btn btn-dark"> <a href="https://www.linkedin.com/in/siria-franco-027552167/" target="_blank"> <i class="bi bi-linkedin"></i></a></button>
+              </div>
+              <div class="col-6">                
+                <button type="button" class="btn btn-dark"> <a href="https://github.com/siriFranco" target="_blank"> <i class="bi bi-github"></i></a></button>
               </div>
             </div>
           </div>
@@ -181,46 +187,48 @@
       </div>
 
       <!--Cards -->
-      <div class="container mt-4 text-center container-custom">
-        <div class="row m-5 justify-content-around text-center">
-            <div class="col-4 mb-4" style="width: 270px;">
-              <div class="demo-content">Escena 1
-                <div> <!-- texto -->
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, beatae possimus ab vitae aperiam est pariatur fugiat perspiciatis. Eos eius enim ipsa. Fugiat, non sint ullam dolore aliquam consequuntur omnis!</p>
-                </div>                
-                <img 
-                  src="./assets/img/expo1.jpg" 
-                  class="img-card"
-                  alt="Foto nocturna con estatua delfine">                
-              </div>
+    <div class="container mt-4 text-center container-custom">
+      <div class="row m-5 justify-content-around text-center">
+        <div class="col-4 mb-4 sm-4" style="width: 16rem;">
+          <div class="demo-content"> 
+            <div>
+              <h4>Escena 1</h4>
+              <hr size="2px" color="black"/>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, beatae possimus ab vitae aperiam est pariatur fugiat perspiciatis. Eos eius enim ipsa. Fugiat, non sint ullam dolore aliquam consequuntur omnis!</p>                
+              <img 
+                src="./assets/img/expo1.jpg" 
+                class="img-card"
+                alt="Foto nocturna con estatua delfine">                
             </div>
-            <div class="col-4 mb-4" style="width: 16rem;">
-              <div class="demo-content">Escena 2
-                <div>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, beatae possimus ab vitae aperiam est pariatur fugiat perspiciatis. Eos eius enim ipsa. Fugiat, non sint ullam dolore aliquam consequuntur omnis!</p>
-                </div>
-                <div>
-                <img 
-                  src="./assets/img/expo2.jpg" 
-                  class="img-card"
-                  style="" 
-                  alt="Foto nocturna de carretera">
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4 sm-4" style="width: 16rem;">
+          <div class="demo-content">
+            <div>
+              <h4>Escena 2</h4>              
+              <hr size="2px" color="black"/>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, beatae possimus ab vitae aperiam est pariatur fugiat perspiciatis. Eos eius enim ipsa. Fugiat, non sint ullam dolore aliquam consequuntur omnis!</p>
+              <img 
+                src="./assets/img/expo2.jpg" 
+                class="img-card"
+                alt="Foto nocturna de carretera">
             </div>
-            <div class="col-4 mb-4" style="width: 16rem;">
-              <div class="demo-content">Escena 3
-                <div>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, beatae possimus ab vitae aperiam est pariatur fugiat perspiciatis. Eos eius enim ipsa. Fugiat, non sint ullam dolore aliquam consequuntur omnis!</p>
-                </div>
-                <div>
-                <img 
-                  src="./assets/img/expo3.jpg" 
-                  class="img-card" 
-                  alt="Foto nocturna junto al mar">
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4 sm-4" style="width: 16rem;">
+          <div class="demo-content">
+            <div>
+              <h4>Escena 3</h4>
+              <hr size="2px" color="black"/>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, beatae possimus ab vitae aperiam est pariatur fugiat perspiciatis. Eos eius enim ipsa. Fugiat, non sint ullam dolore aliquam consequuntur omnis!</p>
+              <img 
+                src="./assets/img/expo3.jpg" 
+                class="img-card" 
+                alt="Foto nocturna junto al mar">
             </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Acceso a DOM -->
@@ -233,7 +241,7 @@
     </div>
     <!-- Método reutiliza solo una indicación -->
     <div class="container">
-      <div class="row" style="padding-bottom: 100px;">
+      <div class="row text-center" style="padding-bottom: 100px;">
         <div class="col">
           <button onclick="changeColorTo('blue')" type="button" class="btn btn-info">Blue</button>
         </div>
@@ -248,32 +256,73 @@
   
     <!-- Uso de elementos y colocación de reset -->
     <div class="container" style="padding-bottom: 100px;">
-      <div class="row">
+      <div class="row text-center">
         <div><h3 class="col-12"> Toca el texto para colorearlo </h3></div>
-        <div class="row">
-          <div class="col"><p class="text-color"onclick="changeColorParagraph('blue', this)">Me cambiaré a azul</p></div>
-          <div class="col"><p class="text-color"onclick="changeColorParagraph('gray', this)">Me cambiaré a gris</p></div>
-          <div class="col"><p class="text-color" onclick="changeColorParagraph('yellow', this)">Me cambiaré a amarillo</p></div>        
+          <div class="row text-center">
+            <div class="col-4 sm-4"><p class="text-color"onclick="changeColorParagraph('blue', this)">Me cambiaré a azul</p></div>
+            <div class="col-4 sm-4"><p class="text-color"onclick="changeColorParagraph('gray', this)">Me cambiaré a gris</p></div>
+            <div class="col-4 sm-4"><p class="text-color" onclick="changeColorParagraph('yellow', this)">Me cambiaré a amarillo</p></div>        
         </div>
       </div>
-      <div class="row">
+      <div class="row text-center">
         <div class="col-12">
           <button type="button" onclick="resetColors()" class="btn btn-dark">Reset</button>
-      </div>
+        </div>
       </div>
     </div>    
 
       <!-- Footer -->      
       <!-- Ondas SVG -->
       <footer class="footer">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#212529" fill-opacity="0.5" d="M0,320L360,160L720,224L1080,224L1440,64L1440,320L1080,320L720,320L360,320L0,320Z"></path>
-        </svg> 
+        <svg width = "100%" height="100%" id="svg" viewBox="0 0 1440 330" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
+          .path-0{
+            animation:pathAnim-0 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+          }
+          @keyframes pathAnim-0{
+            0%{
+              d: path("M 0,400 C 0,400 0,133 0,133 C 88.56459330143542,133.69856459330143 177.12918660287085,134.39712918660285 282,146 C 386.87081339712915,157.60287081339715 508.0478468899521,180.11004784688998 596,164 C 683.9521531100479,147.88995215311002 738.6794258373205,93.16267942583731 819,86 C 899.3205741626795,78.83732057416269 1005.2344497607655,119.23923444976077 1113,135 C 1220.7655502392345,150.76076555023923 1330.3827751196172,141.8803827751196 1440,133 C 1440,133 1440,400 1440,400 Z");
+            }
+            25%{
+              d: path("M 0,400 C 0,400 0,133 0,133 C 88.16267942583733,139.88038277511964 176.32535885167465,146.76076555023926 274,147 C 371.67464114832535,147.23923444976074 478.8612440191388,140.83732057416267 562,130 C 645.1387559808612,119.16267942583734 704.2296650717703,103.88995215311006 815,103 C 925.7703349282297,102.11004784688994 1088.22009569378,115.60287081339715 1201,123 C 1313.77990430622,130.39712918660285 1376.88995215311,131.69856459330143 1440,133 C 1440,133 1440,400 1440,400 Z");
+            }
+            50%{
+              d: path("M 0,400 C 0,400 0,133 0,133 C 110.07655502392345,102.22488038277513 220.1531100478469,71.44976076555024 321,89 C 421.8468899521531,106.55023923444976 513.4641148325359,172.42583732057417 602,180 C 690.5358851674641,187.57416267942583 775.9904306220096,136.8468899521531 861,112 C 946.0095693779904,87.1531100478469 1030.5741626794259,88.1866028708134 1127,96 C 1223.4258373205741,103.8133971291866 1331.712918660287,118.4066985645933 1440,133 C 1440,133 1440,400 1440,400 Z");
+            }
+            75%{
+              d: path("M 0,400 C 0,400 0,133 0,133 C 103.16746411483251,146.82775119617224 206.33492822966502,160.6555023923445 310,155 C 413.665071770335,149.3444976076555 517.8277511961722,124.20574162679426 596,114 C 674.1722488038278,103.79425837320574 726.354066985646,108.52153110047847 812,114 C 897.645933014354,119.47846889952153 1016.7559808612441,125.70813397129186 1127,129 C 1237.244019138756,132.29186602870814 1338.622009569378,132.64593301435406 1440,133 C 1440,133 1440,400 1440,400 Z");
+            }
+            100%{
+              d: path("M 0,400 C 0,400 0,133 0,133 C 88.56459330143542,133.69856459330143 177.12918660287085,134.39712918660285 282,146 C 386.87081339712915,157.60287081339715 508.0478468899521,180.11004784688998 596,164 C 683.9521531100479,147.88995215311002 738.6794258373205,93.16267942583731 819,86 C 899.3205741626795,78.83732057416269 1005.2344497607655,119.23923444976077 1113,135 C 1220.7655502392345,150.76076555023923 1330.3827751196172,141.8803827751196 1440,133 C 1440,133 1440,400 1440,400 Z");
+            }
+          }</style><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#9900ef"></stop><stop offset="95%" stop-color="#00d084"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,133 0,133 C 88.56459330143542,133.69856459330143 177.12918660287085,134.39712918660285 282,146 C 386.87081339712915,157.60287081339715 508.0478468899521,180.11004784688998 596,164 C 683.9521531100479,147.88995215311002 738.6794258373205,93.16267942583731 819,86 C 899.3205741626795,78.83732057416269 1005.2344497607655,119.23923444976077 1113,135 C 1220.7655502392345,150.76076555023923 1330.3827751196172,141.8803827751196 1440,133 C 1440,133 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><style>
+          .path-1{
+            animation:pathAnim-1 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+          }
+          @keyframes pathAnim-1{
+            0%{
+              d: path("M 0,400 C 0,400 0,266 0,266 C 112.84210526315792,269.46411483253587 225.68421052631584,272.9282296650718 323,269 C 420.31578947368416,265.0717703349282 502.1052631578947,253.7511961722488 573,257 C 643.8947368421053,260.2488038277512 703.8947368421052,278.066985645933 813,293 C 922.1052631578948,307.933014354067 1080.3157894736842,319.98086124401914 1193,315 C 1305.6842105263158,310.01913875598086 1372.842105263158,288.00956937799043 1440,266 C 1440,266 1440,400 1440,400 Z");
+            }
+            25%{
+              d: path("M 0,400 C 0,400 0,266 0,266 C 97.52153110047848,248.86124401913875 195.04306220095697,231.7224880382775 290,235 C 384.95693779904303,238.2775119617225 477.3492822966507,261.97129186602876 560,256 C 642.6507177033493,250.02870813397126 715.5598086124401,214.39234449760764 810,227 C 904.4401913875599,239.60765550239236 1020.4114832535886,300.4593301435407 1129,315 C 1237.5885167464114,329.5406698564593 1338.7942583732056,297.77033492822966 1440,266 C 1440,266 1440,400 1440,400 Z");
+            }
+            50%{
+              d: path("M 0,400 C 0,400 0,266 0,266 C 96.35406698564591,256.7368421052631 192.70813397129183,247.4736842105263 284,256 C 375.29186602870817,264.5263157894737 461.52153110047846,290.8421052631579 561,300 C 660.4784688995215,309.1578947368421 773.2057416267942,301.1578947368421 870,285 C 966.7942583732058,268.8421052631579 1047.6555023923445,244.52631578947367 1140,240 C 1232.3444976076555,235.47368421052633 1336.1722488038276,250.73684210526318 1440,266 C 1440,266 1440,400 1440,400 Z");
+            }
+            75%{
+              d: path("M 0,400 C 0,400 0,266 0,266 C 73.96172248803828,260.96650717703346 147.92344497607655,255.93301435406698 259,249 C 370.07655502392345,242.06698564593302 518.2679425837321,233.23444976076553 612,250 C 705.7320574162679,266.76555023923447 745.0047846889953,309.1291866028709 828,301 C 910.9952153110047,292.8708133971291 1037.712918660287,234.2488038277512 1147,220 C 1256.287081339713,205.7511961722488 1348.1435406698565,235.8755980861244 1440,266 C 1440,266 1440,400 1440,400 Z");
+            }
+            100%{
+              d: path("M 0,400 C 0,400 0,266 0,266 C 112.84210526315792,269.46411483253587 225.68421052631584,272.9282296650718 323,269 C 420.31578947368416,265.0717703349282 502.1052631578947,253.7511961722488 573,257 C 643.8947368421053,260.2488038277512 703.8947368421052,278.066985645933 813,293 C 922.1052631578948,307.933014354067 1080.3157894736842,319.98086124401914 1193,315 C 1305.6842105263158,310.01913875598086 1372.842105263158,288.00956937799043 1440,266 C 1440,266 1440,400 1440,400 Z");
+            }
+          }</style><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#9900ef"></stop><stop offset="95%" stop-color="#00d084"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,266 0,266 C 112.84210526315792,269.46411483253587 225.68421052631584,272.9282296650718 323,269 C 420.31578947368416,265.0717703349282 502.1052631578947,253.7511961722488 573,257 C 643.8947368421053,260.2488038277512 703.8947368421052,278.066985645933 813,293 C 922.1052631578948,307.933014354067 1080.3157894736842,319.98086124401914 1193,315 C 1305.6842105263158,310.01913875598086 1372.842105263158,288.00956937799043 1440,266 C 1440,266 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
       </footer>
 
       <!-- Script externo -->
       <script src="./assets/js/main.js"></script>
-
       <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
