@@ -17,3 +17,4 @@ function getNameOfVisitor(){
 function getReferenceOfIdGreeting(){
     return document.getElementById("Greeting");
 }
+

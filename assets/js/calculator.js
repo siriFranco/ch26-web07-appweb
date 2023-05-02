@@ -27,5 +27,5 @@ const borrarDatos = () => {
     document.getElementById("valorIngresarDos").value = "";
     document.getElementById("total").textContent = "TOTAL";
   }
-  
-    
+
+

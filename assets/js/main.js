@@ -38,3 +38,6 @@ function changeColorToRed() {
     const refName = document.getElementById("name");
     refName.style.color = "red";
 }
+
+let numberx = Math.random();
+console.log(numberx);
