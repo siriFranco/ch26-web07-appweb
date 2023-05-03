@@ -6,7 +6,11 @@ function jugar(){
     var mensajePreguntar = ("¿Es éste tu número?");
     preguntar = (document.getElementById("preguntarSiNumero").innerHTML = mensajePreguntar);
     mostrarNumero = (document.getElementById("verNumero").innerHTML = applyRandom);
-    limpiarFelicitar = (document.getElementById("felicitar").innerHTML = ('')); 
+    limpiarFelicitar = (document.getElementById("felicitar").innerHTML = (''));
+    var reinicioNumMinimo;
+    var reinicioNumMaximo; 
+    reinicioNumMinimo = (document.getElementById("numMinimo").innerHTML = 1);
+    reinicioNumMaximo = (document.getElementById("numMaximo").innerHTML = 100);
 }
 
 function menorNumero(){
@@ -22,6 +26,7 @@ function menorNumero(){
     var applyRandom0 = Math.floor(Math.random() * obtenerVerNumero - minNumero + 2); // aplicado aleatorio para obtener nuevo número 
     mensaje0 = (document.getElementById("verNumero").innerHTML = applyRandom0); //número aleatorio colocado en posición original de función "jugar"
 }
+
 
 function mayorNumero(){
     var mensaje0;
@@ -39,7 +44,9 @@ function mayorNumero(){
     console.log(maxNumero);
     if (obtenerVerNumero > obtenerNumMinimo) {
         (document.getElementById("numMinimo").innerHTML = obtenerVerNumero);
-    } // aplicar un if para cambiar el valor mínimo, afirmando que el número pensado es mayor al actual mínimo
+    } /* else {
+        alert("Cuidado, algo raro pasa aquí");
+    } */ // aplicar un if para cambiar el valor mínimo, afirmando que el número pensado es mayor al actual mínimo
     console.log(obtenerVerNumero);
     applyRandom; //variable random para renovar el número random original
     var applyRandom = Math.floor(Math.random() * (maxNumero - parseNumMinimo +1) + parseNumMinimo); //se usa la variable actual de número máximo y el mínimo actual para crear un nuevo número random entre esos valores
@@ -52,3 +59,4 @@ function correctoNumero(){
     var mensajeCorrecto;
     mensajeCorrecto = document.getElementById("felicitar").innerHTML = `Tu número es el ${document.getElementById("verNumero").innerHTML}, excelente decisión`;
 }
+

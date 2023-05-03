@@ -30,7 +30,7 @@
   </head>
 
   <body>
-         <!--navbar copiado y pegado de Bootstrap -->
+    <!--navbar copiado y pegado de Bootstrap -->
     <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="../../index.html">
@@ -87,46 +87,47 @@
       <h1>Adivina mi número<i class="bi bi-controller"></i></h1>
     </div>    
     <main class="cont-general vh-100">
-      <div class="row bg-dark justify-content-around"  style="max-width: 700px; padding: 10px;">
-        <div class="col-10">
-          <p class="text-pixel text-center"> Bienvenido navegante del ciberespacio ¡Te invito a jugar!. Tú piensa un número entre el 1 y 100 y yo voy a usar mis métodos hackereanos para adivinar ¿Va?</p>          
-          
-          <p id="felicitacion100" class="text-pixel" style="font-size: 40px;"></p>
-        <!-- Cabeza -->
-        <div class="row justify-content-around">
-          <div class="row text-center">
-            <p id="felicitar" class="text-pixel-green" style="font-size: 35px;"></p>
+      <div class="container col-12">
+        <div class="row bg-dark justify-content-around"  style="padding: 17px;">
+          <div class="col-12 col-md-12 col-sm-6">
+            <p class="text-pixel text-center" style=""> Bienvenido navegante del ciberespacio ¡Te invito a jugar!. Tú piensa un número entre el 1 y 100 y yo voy a usar mis métodos hackereanos para adivinar ¿Va?</p>
           </div>
+          <!-- Cabeza -->
           <div class="row justify-content-around">
-            <div class="col-6 text-center">
-              <button type="button" class="btn btn-outline-light" onclick="jugar()" >Juguemos</button>
+            <div class="row text-center">
+              <p id="felicitar" class="text-pixel-green" style="font-size: 25px;"></p>
             </div>
-            <div class="row text-center" style="padding-top: 20px;">
-              <p id="preguntarSiNumero" class="text-pixel"></p>
+            <div class="row justify-content-around">
+              <div class="col-6 text-center">
+                <button type="button" class="btn btn-outline-light" onclick="jugar()" >Juguemos</button>
+              </div>
+              <div class="row text-center" style="padding-top: 20px;">
+                <p id="preguntarSiNumero" class="text-pixel"></p>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col-4 sm-4">
+                <p id="numMinimo" class="text-pixel-hide" style="font-size: 50px; padding-top: 0px;">1</p>
+              </div>
+              <div class="col-4 sm-4">
+                <p id="verNumero" class="text-pixel" style="font-size: 60px; padding-top: 0px;"></p>
+              </div>
+              <div class="col-4 sm-4">
+                <p id="numMaximo" class="text-pixel-hide" style="font-size: 50px; padding-top: 0px;">100</p>
+              </div>
             </div>
           </div>
-          <div class="row text-center">
-            <div class="col">
-              <p id="numMinimo" class="text-pixel" style="font-size: 80px; padding-top: 0px;">1</p>
+          <!-- Botones pregunta -->
+          <div class="row text-center justify-content-around " style="padding: 2px; ">          
+            <div class="col-4 sm-4 text-center">
+              <button type="button" id="botonNumeroMenor" class="btn btn-outline-light" onclick="menorNumero()" >Mi número es menor</button>
             </div>
-            <div class="col">
-              <p id="verNumero" class="text-pixel" style="font-size: 80px; padding-top: 0px;"></p>
+            <div class="col-4 sm-4 text-center">
+              <button type="button" class="btn btn-outline-light" onclick="correctoNumero()" >Así es, ¡ése es mi número!</button>
             </div>
-            <div class="col">
-              <p id="numMaximo" class="text-pixel" style="font-size: 80px; padding-top: 0px;">100</p>
+            <div class="col-4 sm-4 text-center">
+              <button type="button" class="btn btn-outline-light" onclick="mayorNumero()" >Mi número es mayor  </button>
             </div>
-          </div>
-        </div>
-        <!-- Botones pregunta -->
-        <div class="row justify-content-around">          
-          <div class="col-4 text-center">
-            <button type="button" class="btn btn-outline-light" onclick="menorNumero()" >No, mi número es menor</button>
-          </div>
-          <div class="col-4 text-center">
-            <button type="button" class="btn btn-outline-light" onclick="correctoNumero()" >¡Sí! Ése es mi número</button>
-          </div>
-          <div class="col-4 text-center">
-            <button type="button" class="btn btn-outline-light" onclick="mayorNumero()" >No, mi número es mayor</button>
           </div>
         </div>
       </div>
