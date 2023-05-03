@@ -18,12 +18,16 @@ function menorNumero(){
     var mensaje0; // variable para uso más adelante
     var obtenerVerNumero = document.getElementById("verNumero").innerHTML; //Obtener número generado de manera aleatoria por función "jugar"
     var obtenerNumMaximo = document.getElementById("numMaximo").innerHTML; //obtener el número máximo indicado
+    var obtenerNumMinimo = document.getElementById("numMinimo").innerHTML; //obtener el número máximo indicado
+    const parseObtenerNumero = parseInt(obtenerVerNumero);
     const parseNumMaximo = parseInt(obtenerNumMaximo); //parse a número máximo
+    const parseNumMinimo = parseInt(obtenerNumMinimo);
     if (obtenerVerNumero < parseNumMaximo) {
         (document.getElementById("numMaximo").innerHTML = obtenerVerNumero);
     } // se aplica if para que el número máximo se actualice por el nuevo
     applyRandom0;
-    var applyRandom0 = Math.floor(Math.random() * obtenerVerNumero - minNumero + 2); // aplicado aleatorio para obtener nuevo número 
+    var applyRandom0 = Math.floor(Math.random() * (parseObtenerNumero - parseNumMinimo +1) + parseNumMinimo);  // aplicado aleatorio para obtener nuevo número 
+    console.log(applyRandom0);
     mensaje0 = (document.getElementById("verNumero").innerHTML = applyRandom0); //número aleatorio colocado en posición original de función "jugar"
 }
 
