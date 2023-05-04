@@ -21,17 +21,17 @@ function calcular(){
   switch (diaNumero) {
     case 'Lunes':
     case 'Martes':
-    case 'Miercoles':
+    case 'Miércoles':
     case 'Jueves':
     case 'Viernes':
-      console.log('ese día fue laboral');
-      document.getElementById("resultado").innerHTML = `Ese día es ${diaNumero}, ese día es laboral`; 
+      console.log('ese día es laboral');
+      document.getElementById("resultado").innerHTML = `Ese día es ${diaNumero}, es laboral`; 
       break;
     case 'Sábado':
       document.getElementById("resultado").innerHTML = `Ese día es ${diaNumero}, fin de semana, desafortunadamente ese día hay quienes laboran`; 
       break;
     case 'Domingo':
-      console.log('Ese día no es laborable');
+      document.getElementById("resultado").innerHTML = `Ese día es ${diaNumero}, no es laborable, es fin de semana`; 
       break;
     default:
       document.getElementById("resultado").innerHTML = `No es una fecha válida, intenta de nuevo por favor`; alert(`¡Ups! Algo salió mal ¿estás tratando de romper la matrix?`) ;
